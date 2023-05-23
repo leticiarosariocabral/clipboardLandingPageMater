@@ -126,7 +126,7 @@ header {
 }
 .imag {
     grid-area: imag;
-}
+} 
 .search-sub {
     grid-area: search-sub;
 }
@@ -257,12 +257,12 @@ footer span {
     font-size: 16px;
 }
 /*******media queries*****/
-@media screen and (max-width:375px) {
+@media screen and (max-width:360px) {
     header {
         padding: 0 50px 0 50px;
     }
     main {
-        margin: 0 50px 0 50px;
+        margin: 0 10px;
     }
     .logo {
         padding-top: 70px;
@@ -305,7 +305,7 @@ footer span {
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .button,
     .partner .container,
     .workflow .container{
@@ -326,4 +326,52 @@ footer span {
     flex-direction: row;
     gap: 20px;
   }
+}
+@media screen and (max-width: 414px){
+    header{
+        padding: 0 20px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .button .iOS{
+        width: 50%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .button .mac{
+        width: 50%;
+    }
+    .banner .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .button .iOS{
+        width: 20%;
+        margin-right: 30px;
+    }
+    .button .mac{
+        width: 20%;
+    }
+    .banner .container{
+        padding: 0 20px;
+    }
+    .banner img{
+        display: block;
+
+    }
+    .partner .container{
+        gap: 30px;
+    }
+    footer .container{
+        margin: 0 30px;
+    }
 }
