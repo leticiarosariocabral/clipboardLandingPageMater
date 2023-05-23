@@ -19,7 +19,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -58,8 +58,9 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+footer {
+  display: flex;
+  flex-direction: row;
 }
 ```
 ## Author
@@ -68,9 +69,5 @@ To see how you can add code snippets, see below:
 - Frontend Mentor - [@leticiarosario](https://www.frontendmentor.io/profile/Leticiarosario)
 - linkedin - [@leticiarosariocabral3](https://www.linkedin.com/in/leticiarosariocabral/)
 
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 
