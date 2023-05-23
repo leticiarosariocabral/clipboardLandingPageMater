@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    /****primary****/
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    /****Neutral****/
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    margin: auto;
+}
+
+a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    padding-top: 3%;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    padding-top: 7%;
+}
+
+p {
+    color: var(--GrayishBlue);
+    font-size: 16px;
+}
+
+header {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: 100% 70%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.sub-title {
+    color: var(--GrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 0 0;
+    
+}
+
+.button .iOS {
+    border: 1px solid var(--StrongCyan);
+    padding: 6px;
+    color: #fff;
+    width: 12%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--StrongCyan);
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 2px 3px 2px hsl(170, 39%, 65%);
+    transition: 0.5s;
+}
+
+.button .iOS:hover {
+    background-color: hsl(170, 55%, 63%);
+    border-color: hsl(170, 55%, 63%);
+    ;
+}
+
+.button .mac {
+    border: 1px solid var(--LightBlue);
+    padding: 6px;
+    color: #fff;
+    width: 12%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LightBlue);
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px hsl(228, 80%, 72%);
+    transition: 0.5s;
+}
+
+.button .mac:hover {
+    background-color: hsl(228, 68%, 73%);
+    border-color: hsl(228, 68%, 73%);
+}
+/***************************/
+.banner .container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+.imag {
+    grid-area: imag;
+}
+.search-sub {
+    grid-area: search-sub;
+}
+.banner h4 {
+    color: var(--DarkGrayishBlue);
+    padding: 20px 0 20px 0;
+    font-weight: 600;
+}
+/******clipboard******/
+.clipboard .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clipboard p {
+    text-align: center;
+    padding: 20px 0 80px 0;
+}
+.clipboard img{
+    max-width: 100%;
+}
+/******workflow******/
+.workflow{
+    max-width: 1500px;
+    margin: auto;
+}
+.workflow h2 {
+    text-align: center;
+}
+
+.workflow p {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+.workflow .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.workflow .container img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.workflow h3 {
+    text-align: center;
+}
+.workflow .blacklist {
+    padding-top: 12px;
+}
+/******partner*******/
+.partner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+    margin-top: 30px;
+}
+/*******store*****/
+.store {
+    margin: 20px 0 20px 0;
+}
+.store .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.store p {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+/*****footer*****/
+footer {
+    margin-top: 100px;
+    background: #f5f6f8;
+    line-height: 40px;
+    padding-top: 2rem;
+}
+footer .container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+ margin: 0 10rem;
+}
+footer .container:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 4 1 auto;
+    -ms-flex: 4 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+footer p {
+    margin: 20px 0 0 0;
+    background: #f5f6f8;
+}
+footer h5 {
+    color: var(--DarkGrayishBlue);
+}
+footer h5:hover {
+    color: var(--StrongCyan);
+    cursor: pointer;
+}
+.social i {
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--DarkGrayishBlue);
+}
+.social i:hover {
+    color: var(--StrongCyan);
+}
+.attribution {
+    text-align: center;
+}
+footer span {
+    color: var(--LightBlue);
+    font-size: 16px;
+}
+/*******media queries*****/
+@media screen and (max-width:375px) {
+    header {
+        padding: 0 50px 0 50px;
+    }
+    main {
+        margin: 0 50px 0 50px;
+    }
+    .logo {
+        padding-top: 70px;
+    }
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .sub-title {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+    .button .iOS {
+        width: 205px;
+        margin-bottom: 15px;
+    }
+    .button .mac {
+        width: 205px;
+        margin-bottom: 40px;
+    }
+    .banner .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imag img {
+        width: 220px;
+    }
+    .search-sub {
+        text-align: center;
+        margin: 0 10px 20px 10px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .button,
+    .partner .container,
+    .workflow .container{
+        flex-direction: column;
+    }
+    footer .container{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0 0 70px 0;
+    }
+  .menu-footer, .menu-footer1, .menu-footer2{
+    text-align: center;
+  }
+  .social{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
