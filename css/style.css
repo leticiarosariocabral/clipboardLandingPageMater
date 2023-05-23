@@ -257,55 +257,10 @@ footer span {
     font-size: 16px;
 }
 /*******media queries*****/
-@media screen and (max-width:360px) {
-    header {
-        padding: 0 50px 0 50px;
+@media only screen and (min-width: 414px) {
+    main{
+        padding: 0 20px;
     }
-    main {
-        margin: 0 10px;
-    }
-    .logo {
-        padding-top: 70px;
-    }
-    h1 {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    .sub-title {
-        font-size: 0.7rem;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .button {
-        display: flex;
-        flex-direction: column;
-    }
-    .button .iOS {
-        width: 205px;
-        margin-bottom: 15px;
-    }
-    .button .mac {
-        width: 205px;
-        margin-bottom: 40px;
-    }
-    .banner .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .imag img {
-        width: 220px;
-    }
-    .search-sub {
-        text-align: center;
-        margin: 0 10px 20px 10px;
-    }
-    p {
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 600px) {
     .button,
     .partner .container,
     .workflow .container{
@@ -320,58 +275,27 @@ footer span {
   .menu-footer, .menu-footer1, .menu-footer2{
     text-align: center;
   }
+  .button{
+    gap: 20px;
+  }
+  .button .iOS, .button .mac{
+    flex-direction: column;
+    width: 40%;
+    margin-right: 0;
+  }
+  .banner img{
+    width: 100%;
+    height: auto;
+  }
   .social{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
-}
-@media screen and (max-width: 414px){
-    header{
-        padding: 0 20px;
-    }
-    main{
-        padding: 0 20px;
-    }
-    .button .iOS{
-        width: 50%;
-        margin-bottom: 15px;
-        margin-right: 0;
-    }
-    .button .mac{
-        width: 50%;
-    }
-    .banner .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .banner img{
-        width: 100%;
-        height: auto;
-        padding: 0 10px;
-    }
+  .banner .container{
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width: 820px){
-    .button .iOS{
-        width: 20%;
-        margin-right: 30px;
-    }
-    .button .mac{
-        width: 20%;
-    }
-    .banner .container{
-        padding: 0 20px;
-    }
-    .banner img{
-        display: block;
 
-    }
-    .partner .container{
-        gap: 30px;
-    }
-    footer .container{
-        margin: 0 30px;
-    }
-}
