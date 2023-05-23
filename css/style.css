@@ -298,4 +298,36 @@ footer span {
   }
 }
 
-
+@media only screen and (max-width: 390px){
+    main{
+        padding: 0 20px;
+    }
+    .workflow .container{
+        gap: 20px;
+    }
+    .button,
+    .partner .container,
+    .workflow .container{
+        flex-direction: column;
+    }
+    .button{
+        gap: 20px;
+      }
+      .button .iOS, .button .mac{
+        flex-direction: column;
+        width: 40%;
+        margin-right: 0;
+      }
+      .banner .container{
+        flex-wrap: wrap;
+      }
+      footer .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+     }
+     .menu-footer, .menu-footer1, .menu-footer2{
+        text-align: center;
+      }
+}
